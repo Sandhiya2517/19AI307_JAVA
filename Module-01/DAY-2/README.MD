@@ -1,59 +1,54 @@
-# Ex.No:1(C) CONTROL STATEMENTS
+# Ex.No:1(B) VARIABLES AND OPERATOR
 
 ## AIM:
-To develop a Java program to check given number is zero or not.
+To write a Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true. [Class name is ‘Demo’]
 
 ## ALGORITHM :
 1.	Start the program.
-2.	Declare an integer variable 'num'
-3.	Create a Scanner object 'sc' to read input from the user
-4.	Read an integer input from the user and store it in 'num'
-5.	Check if 'num' is equal to 0:
-a.	If true, print "Given number is Zero"
-b.	If false, print 'num' followed by " is Non-Zero"
-6.	End
-
-
-
-
+2.	Import the necessary package 'java.util'
+3.	Define a class named 'Demo'
+4.	Implement the main method
+5.	Create a new instance of the 'Scanner' class named 'sc' to read user input
+6.	Read an integer 'a' from the user using the 'nextInt' method of 'sc'
+7.	Read another integer 'b' from the user using the 'nextInt' method of 'sc'
+8.	Check if 'a' is less than 50 or if 'a' is less than 'b'
+a)	If the condition is true, print "true" using the 'print' method of 'System.out'
+b)	If the condition is false, print "false" using the 'print' method of 'System.out'
+9.	End
 
 ## PROGRAM:
  ```
 /*
-Program to implement a class & objects using Java
+Program to implement a variable and operators using Java
 Developed by: SANDHIYA M
-RegisterNumber:  212224220086
+RegisterNumber: 212224220086
 */
 ```
 
 ## Sourcecode.java:
 ```
 import java.util.Scanner;
-public class Demo {
-public void check(int num){
-    num=num*num;
-    System.out.println(num);
-}
-public static void main(String[] args) 
-    {
-        Scanner in = new Scanner(System.in);
-        int num=in.nextInt();
-    Demo s=new Demo();
-    s.check(num);   
+public class Demo{
+    public static void main(String[]args){
+        Scanner scanner=new Scanner(System.in);
+        int a=scanner.nextInt();
+        int b=scanner.nextInt();
+        if(a<50 && a<b){
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
+        scanner.close();
     }
 }
-``` 
-
-
-
-
-
+```
 
 ## OUTPUT:
-<img width="611" height="171" alt="image" src="https://github.com/user-attachments/assets/a19d7978-78fa-4d32-aed0-83fb1f649493" />
 
+![1b](https://github.com/user-attachments/assets/852aea03-446c-45ad-a842-ecbb090deb6c)
 
 
 ## RESULT:
-Thus, the Java program to check given number is zero or not was created successfully.
-
+Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
